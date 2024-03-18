@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carmaker/Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="decor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .quantity {
+            display: flex;
+            justify-content: center;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <nav id="Mytopnav" >   
+        <div class="topnav" id="myTopnav">
+            <div class="topnav1">
+                <a href="index.html" class="a-img"><img src="image/Carmaker-logos_transparent.png" height="40" style="position: relative; right: 15px;" alt="Carmaker logo"></a>
+                <a href="sales.html" class="mar-a">Shop</a>
+                <a href="contact.html" class="mar-a">Contact</a>
+                <a href="about.html" class="mar-a">About</a>
+            </div>
+            <div class="topnav2">
+                <a href="logsign.html" class="btn-a"><svg xmlns="http://www.w3.org/2000/svg" height="" class="two-icon" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg></a>   
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container-2">
+        <div class="checkoutLayout">
+    
+            
+            <div class="returnCart">
+                <a href="sales.html">keep shopping</a>
+                <h1>Your Cart List</h1>
+                <div class="list-lists">
+                    <div>Image</div>
+                    <div>Name/Price</div>
+                    <div>Qty</div>
+                    <div>SubTotal</div>
+                </div>
+                <div class="list">
+                   
+                    <div class="item">
+                        <img src="images/cayern.JPEG">
+                        <div class="info">
+                            <div class="name">Cayene</div>
+                            <div class="price">$180000</div>
+                        </div>
+                        <div class="quantity">1</div>
+                        <div class="returnPrice">$433.3</div>
+                    </div>
+    
+                </div>
+            </div>
+    
+    
+            <div class="right">
+                <div class="right-1">
+                    <h1>Billing Address</h1>
+                    <div class="form form-a">
+                        <div class="group">
+                            <label for="name">Full Name</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+            
+                        <div class="group">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" name="phone" id="phone">
+                        </div>
+            
+                        <div class="group">
+                            <label for="address">Address</label>
+                            <input type="text" name="address" id="address">
+                        </div>
+            
+                        <div class="group">
+                            <label for="country">Country</label>
+                            <select name="country" id="country">
+                                <option value="">Choose..</option>
+                                <option value="">Kingdom</option>
+                            </select>
+                        </div>
+            
+                        <div class="group">
+                            <label for="city">City</label>
+                            <select name="city" id="city">
+                                <option value="">Choose..</option>
+                                <option value="">London</option>
+                            </select>
+                        </div>
+
+                        <div class="group">
+                            <label for="zip">Zip</label>
+                            <input type="text" id="zip" name="zip" placeholder="10001">
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+                <div class="right-2">
+                    <h2 class="h2-l">Payment</h2>
+                    <h2 class="h2-2">Accepted Card</h2>
+                    <div class="form form2">
+                        <div class="group icon-container11">
+                            <i class="fa fa-cc-visa" style="color:white;"></i>
+                            <i class="fa fa-cc-amex" style="color:white;"></i>
+                            <i class="fa fa-cc-mastercard" style="color:white;"></i>
+                            <i class="fa fa-cc-discover" style="color:orange;"></i>
+                        </div>
+                        <div class="group">
+                            <label for="cname">Name on Card</label>
+                            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                        </div>
+                        <div class="group">
+                            <label for="ccnum">Credit card number</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                        </div>
+                        <div class="group">
+                            <label for="expdate">Exp Month</label>
+                            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                        </div>
+                        <div class="group">
+                            <label for="expyear">Exp Year</label>
+                            <input type="text" id="expyear" name="expyear" placeholder="2018">
+                        </div>
+                        <div class="group">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" name="cvv" placeholder="352">
+                        </div>         
+                        
+                    </div>
+                    <div class="return">
+                        <div class="row">
+                            <div>Total Quantity</div>
+                            <div class="total-Quantity" style="letter-spacing: 2px; font-size: 1em;">70</div>
+                        </div>
+                        <div class="row">
+                            <div>Total Price</div>
+                            <div class="totalPrice" style="letter-spacing: 2px; font-size: 1em;">$900</div>
+                        </div>
+                    </div>
+                    <button class="buttonCheckout">CHECKOUT</button>
+
+                </div>    
+            </div>
+        </div>
+    </div>
+    
+    <script src="checkout.js"></script>
+    <script src="app.js"></script>
+    <script src="index.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carmaker/Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="decor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #EEEEEE;
+        }
+
+        #sale {
+            width: 100%;
+            padding: 40px 0;
+        }
+
+        .sale-div {
+            width: 88%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+            padding: 30px 0;
+            background: white;
+        }
+
+        .sale-1 {
+            text-align: center;
+            font-size: 2em;
+            width: 88%;
+            margin: 0 auto;
+        }
+
+        .sale-2 {
+            width: 88%;
+            display: flex;
+            gap: 30px;
+            margin: 0 auto;
+            height: 300px;
+            color: azure;
+        }
+
+        .sale-2a {
+            width: 50%;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/erik-mclean-eQ7v8A49oVs-unsplash.jpg");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sale-2b {
+            width: 50%;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/campbell-3ZUsNJhi_Ik-unsplash.jpg");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sale-btn {
+            padding: 10px 20px;
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+            font-size: 1.3em;
+        }
+
+        .sale-btn:hover {
+            background: white;
+            color: black;
+        }
+
+        .div-saleee {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(220px,auto));
+            gap: 30px;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .product-card {
+            width: 100%;
+        }
+
+        .div-saleee .product-card img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+        }
+
+        @media (max-width: 1000px) {
+            .listProduct {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .listProduct {
+                grid-template-columns: 1fr;
+
+            }
+
+            .sale-2 {
+                flex-direction: column;
+                height: 490px;
+            }
+
+            .sale-2a, .sale-2b {
+                margin: 0 auto;
+                width: 90%;
+                padding: 30px 0;
+            }
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+     
+    <nav id="Mytopnav" >   
+        <div class="topnav" id="myTopnav">
+            <div class="topnav1">
+                <a href="index.html" class="a-img"><img src="image/Carmaker-logos_transparent.png" height="40" style="position: relative; right: 15px;" alt="Carmaker logo"></a>
+                <a href="sales.html" class="mar-a">Shop</a>
+                <a href="contact.html" class="mar-a">Contact</a>
+                <a href="about.html" class="mar-a">About</a>
+            </div>
+            <div class="topnav2">
+                <div class="box-div">
+                    <div class="totalQuantity"></div>
+                    <a href="#" class="btn-a"><svg xmlns="http://www.w3.org/2000/svg" height="" viewBox="0 0 448 512" class="two-icon iconCart"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64v48H160V112zm-48 48H48c-26.5 0-48 21.5-48 48V416c0 53 43 96 96 96H352c53 0 96-43 96-96V208c0-26.5-21.5-48-48-48H336V112C336 50.1 285.9 0 224 0S112 50.1 112 112v48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg></a>
+                </div>
+                <a href="logsign.html" class="btn-a"><svg xmlns="http://www.w3.org/2000/svg" height="" class="two-icon" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg></a>   
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+
+    <div class="">
+        <div id="sale">
+            <div class="sale-div">
+                <div class="sale-1" style="font-size: 3em; font-weight: bold;">Sale</div>
+                <div class="sale-2">
+                    <div class="sale-2a">
+                        <span style="font-size: 1.3em;">Special Offer</span>
+                        <h3 style="font-size: 2em;">Get 10% OFF</h3>
+                        <button class="sale-btn">Learn More</button>
+                    </div>
+                    <div class="sale-2b">
+                        <span style="font-size: 1.3em;">Limited Time Offer</span>
+                        <h3 style="font-size: 2em;">Free Shipping</h3>
+                        <button class="sale-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="div-sale2">
+            <div class="listProduct">
+                <div class="item">
+                    <img src="images/ex scl.JPEG" height="350px">
+                    <h2 class="name">Bentley Bentayga S</h2>
+                    <div class="price">$ 380000</div>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>   
+        
+    
+        <div class="cart">
+            <h2>CART</h2>
+            <div class="listcart">
+                <div class="item">
+                    <img src="images/ex scl.JPEG">
+                    <div class="content">
+                        <div class="name">Mercedes S63 AMG</div>
+                        <div class="price">$420000/1</div>
+                    </div>
+                    <div class="quantity">
+                        <button>-</button>
+                        <span class="value">3</span>
+                        <button>+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <div class="close">CLOSE</div>
+                <div class="checkout">
+                    <a href="checkout.html">CHECKOUT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="um-container">
+        <div class="um-l"> 
+            <div class="um-l2">
+                <div class="um-l2a">
+                    <h3 style="font-family: Arial, Helvetica, sans-serif; font-size: 5vw; color: white; ">Unmatched Luxury and Service</h3>
+                    <p>At Carmaker, our mission is to provide our clients with the ultimate luxury experience. We’re committed to delivering exceptional service and ensuring each client leaves satisfied and thrilled with their exotic car purchase. We take pride in our selection and quality, and we strive to exceed expectations every time.</p>
+                </div>
+                <div class="um-l2b">
+                    <button type="button">Mercedes</button>
+                    <button type="menu">Rolls Royce</button>
+                </div>
+            </div>
+        </div>
+        <div class="icon-div">
+            <div class="div-fa">
+                <i class="fa fa-key sff lock-sff"></i><span>Secure payment</span>
+            </div>
+            <div class="div-fa">
+                <i class="fa fa-truck sff"></i><span>Fast shipping</span>
+            </div>
+            <div class="div-fa">
+                <i class="fa fa-rotate-right sff"></i><span>Free Return</span>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer-div">
+        <footer class="footer-1">
+            <div class="div-footer">
+                <div class="first-div">
+                    <div class="ul-div">
+                        <h4 class="h4-f">Home</h4>
+                        <ul class="ul-foo">
+                            <li class="li-f"><a href="index.html">Home</a></li>
+                            <li class="li-f"><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="ul-div">
+                        <h4 class="h4-f">Shop</h4>
+                        <ul class="ul-foo">
+                            <li class="li-f"><a href="#">Mercedes</a></li>
+                            <li class="li-f"><a href="#">Rolls Royce</a></li>
+                        </ul>
+                    </div>
+                    <div class="ul-div">
+                        <h4 class="h4-f">Sales</h4>
+                        <ul class="ul-foo">
+                            <li class="li-f"><a href="sales.html">Shop</a></li>
+                            <li class="li-f"><a href="checkout.html">Cart</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="second-div">
+                    <h4 class="h4-f">Carmaker</h4>
+                    <p style="font-size: 1em; font-family: Arial, Helvetica, sans-serif; text-align: start; line-height: 22px; word-spacing: 2px; letter-spacing: 1px;">Thank you for choosing Carmaker. Follow us on social media to stay up-to-date with our latest inventory and promotions.</p>
+                    <div class="sec-div-0">
+                        <a href="#"><i class="fa fa-instagram" style="font-size: 25px; margin-right: 15px;"></i></a>
+                        <a href="#"><i class="fa fa-twitter" style="font-size: 25px; margin-right: 15px;"></i></a>
+                        <a href="#"><i class="fa fa-linkedin" style="font-size: 25px; margin-right: 15px;"></i></a>
+                        <a href="#"><i class="fa fa-whatsapp" style="font-size: 25px;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="div-line"></div>
+            <div class="div-footer2">
+                <div class="fi-div">
+                   <img src="image/Carmaker-logos_transparent.png" height="40" style="color: white;" alt="Carmaker logo">
+                </div>
+                <p>Copyright © 2023 Carmaker. All rights reserved</p>
+            </div>
+        </footer>
+    </section>  
+    
+   <script src="index.js"></script> 
+   <script src="app.js"></script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+[
+    {
+        "id": 1,
+        "name": "Mercedes S63 AMG",
+        "price": 340000,
+        "image": "images/ex scl.JPEG",
+        "description": "This is a luxury car that offers both comfort and performance. With its sleek and modern design and advanced features, it’s a perfect choice for customers who demand the best in style and performance."
+
+    },
+
+    
+    {
+        "id": 2,
+        "name": "GLE 800 Brabus",
+        "price": 170000,
+        "image": "images/Gle.JPEG",
+        "description": "This is a luxury car that offers both comfort and performance. With its sleek and modern design and advanced features, it’s a perfect choice for customers who demand the best in style and performance."
+    },
+
+    
+    {
+        "id": 3,
+        "name": "SL 63 4matic",
+        "price": 310000,
+        "image": "images/gt.JPEG",
+        "description": "This is a luxury car that offers both comfort and performance. With its sleek and modern design and advanced features, it’s a perfect choice for customers who demand the best in style and performance."
+    },
+
+    
+    {
+        "id": 4,
+        "name": "Maybach S650",
+        "price": 190000,
+        "image": "images/s coup.JPEG",
+        "description": "This is a luxury car that offers both comfort and performance. With its sleek and modern design and advanced features, it’s a perfect choice for customers who demand the best in style and performance."
+    },
+
+    
+    {
+        "id": 5,
+        "name": "Aventador SVJ",
+        "price": 700000,
+        "image": "images/lamb.JPEG",
+        "description": "This is a luxury car that offers both comfort and performance. With its sleek and modern design and advanced features, it’s a perfect choice for customers who demand the best in style and performance."
+    },
+    
+   
+    {
+        "id": 6,
+        "name": "Pegani Huraya",
+        "price": 4500000,
+        "image": "images/pegani.JPEG",
+        "description": "This is a luxury car that offers both comfort and performance. With its sleek and modern design and advanced features, it’s a perfect choice for customers who demand the best in style and performance."
+    },
+
+    {
+        "id": 7,
+        "name": "Rolls Royce Dawn",
+        "price": 550000,
+        "image": "images/dawn.JPEG",
+        "description": "This is a luxury car that offers both comfort and performance. With its sleek and modern design and advanced features, it’s a perfect choice for customers who demand the best in style and performance."
+    },
+
+    {
+        "id": 8,
+        "name": "Rolls Royce Cullinan",
+        "price": 750000,
+        "image": "images/ex culli.JPEG",
+        "description": "This is a luxury car that offers both comfort and performance. With its sleek and modern design and advanced features, it’s a perfect choice for customers who demand the best in style and performance."
+    },
+
+    {
+        "id": 9,
+        "name": "McLaren 720s",
+        "price": 550000,
+        "image": "images/Mclaren.JPEG",
+        "description": "This is a luxury car that offers both comfort and performance. With its sleek and modern design and advanced features, it’s a perfect choice for customers who demand the best in style and performance."
+    },
+
+    {
+        "id": 10,
+        "name": "Bentley Bentayga S",
+        "price": 450000,
+        "image": "images/bentleyb.JPEG",
+        "description": "This is a luxury car that offers both comfort and performance. With its sleek and modern design and advanced features, it’s a perfect choice for customers who demand the best in style and performance."
+    },
+
+    {
+        "id": 11,
+        "name": "Ferrari 488 Pista",
+        "price": 3500000,
+        "image": "images/rarri.JPEG",
+        "description": "This is a luxury car that offers both comfort and performance. With its sleek and modern design and advanced features, it’s a perfect choice for customers who demand the best in style and performance."
+    },
+
+    {
+        "id": 12,
+        "name": "Cayenne Turbo GT",
+        "price": 280000,
+        "image": "images/cayern.JPEG",
+        "description": "This is a luxury car that offers both comfort and performance. With its sleek and modern design and advanced features, it’s a perfect choice for customers who demand the best in style and performance."
+    },
+
+    {
+        "id": 13,
+        "name": "Range Rover P530",
+        "price": 180000,
+        "image": "images/new range.JPEG",
+        "description": "This is a luxury car that offers both comfort and performance. With its sleek and modern design and advanced features, it’s a perfect choice for customers who demand the best in style and performance."
+    },
+
+    {
+        "id": 14,
+        "name": "Porsche 992",
+        "price": 250000,
+        "image": "images/porsche.JPEG",
+        "description": "This is a luxury car that offers both comfort and performance. With its sleek and modern design and advanced features, it’s a perfect choice for customers who demand the best in style and performance."
+    },
+
+    {
+        "id": 15,
+        "name": "Ferrari 812 GTS",
+        "price": 4500000,
+        "image": "images/ferrari G.JPEG",
+        "description": "This is a luxury car that offers both comfort and performance. With its sleek and modern design and advanced features, it’s a perfect choice for customers who demand the best in style and performance."
+    }
+]

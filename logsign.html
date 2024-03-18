@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carmaker/login/sign up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="decor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      
+
+
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+      }
+
+      .form-cont {
+        width: 100%;
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/BWSI2152.JPEG);
+        background-position: center;
+        background-size: cover;
+        height: 720px;
+        border-bottom: 4px solid #999;
+      }
+
+
+
+      /* === Google Font ===*/
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+      
+
+     
+      /* === Variables Define ===*/
+      :root{
+        --primary-color:#3525D3;
+        --white-color:#fff;
+        --black-color:#3C4A57; 
+        --light-gray:#E4E8EE;
+      }
+
+      /* === Main Content CSS ===*/
+      .wrapper{
+        padding:50px 25px 50px 25px;
+        max-width:668px;
+        width:100%;
+        margin: auto;
+      }
+     
+      .wrapper .headline{
+        text-align: center;
+        padding-bottom:48px;
+      }
+
+      .wrapper .headline h1{
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 52px;
+        color: #fff;
+      }
+
+      .form-cont {
+        height: 900px;
+      }
+
+      .form {
+        max-width:350px;
+        width:100%;
+        margin:50px auto;
+        padding: 30px 15px;
+        border: 1px solid whitesmoke;
+      }
+
+      .form-group{
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(rgba(96, 93, 93, 0.5), rgba(96, 93, 93, 0.5));
+        border: 1px solid whitesmoke;
+      }
+
+      .form-group i {
+        padding-left: 15px;
+        color: #999;
+      }
+
+      .form-group input{
+        display: block;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.1px;
+        padding:11px 15px;
+        height:48px;
+        border-radius: 5px;
+        background: transparent;
+        color: #E4E8EE;
+        border: 0;
+        box-shadow: none;
+        width:100%;
+
+      }
+      .wrapper .form-group input:focus{
+        outline: 0;
+      }
+
+
+      .wrapper .form-group input::placeholder{
+        color: #999;
+        font-weight: 400;
+        font-size: 14px;
+      }
+      .wrapper .btn{
+        width:100%;
+        margin:15px 0 30px;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 700;
+        padding:12px 29px;
+        height:48px;
+        text-transform: uppercase;
+        color: #fff;
+        background: linear-gradient(rgba(96, 93, 93, 0.5), rgba(96, 93, 93, 0.5));;
+        border: 1px solid whitesmoke;
+        border-radius: 2px;
+        cursor: pointer;
+        text-align: center;
+      }
+      .wrapper .btn:focus{
+        outline:none;
+      }
+
+      .wrapper .btn:hover {
+        background: #06283D;
+      }
+
+      .wrapper .account-exist{
+        color: #fff;
+        border-top:1px solid var(--light-gray);
+        padding-top:20px;
+        text-align: center;
+      }
+      .wrapper .account-exist a{
+        color: #eaeaea;
+      }
+      .wrapper .forget-password{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        padding:15px 0;
+      }
+      .wrapper .forget-password a{
+        color: #3074e8;
+      }
+      .wrapper .forget-password .check-box{
+        font-size: 15px;
+        color: #999;
+      } 
+      .signup.inActive{
+        display:none;
+      }
+      .signin {
+        display:none;
+        background: transparent;
+      }
+      .signin.active{
+        display:block;
+      }
+
+      @media (max-width:1030px){
+        .wrapper::before{
+          left:-25%;
+          min-height: 60vh;
+          height:500px;
+        }
+      }
+      @media (max-width:767px){
+        .wrapper{
+          max-width: 550px;
+        }
+        .wrapper .headline h1{
+          font-size: 22px;
+          line-height:25px;
+        }
+      }
+
+      
+              
+        
+     
+
+      
+    </style>
+</head>
+
+<body>
+    <div class="form-cont">
+      <div class="wrapper">
+          <div class="headline">
+              <h1>Welcome To Carmaker. We exist to make driving easier.</h1>
+          </div>
+          <form class="form" method="post" action="#">
+              <div class="signup">
+                  <div class="form-group">
+                      <i class="fa fa-user" style="font-size: 1.4em;"></i>
+                      <input class="input-field" type="text" placeholder="Full name" required="">
+                  </div>
+                  <div class="form-group">
+                      <i class="fa fa-envelope"></i>
+                      <input class="input-field" type="email" placeholder="Email" required="">
+                  </div>
+                  <div class="form-group">
+                      <i class="fa fa-key"></i>
+                      <input class="input-field" type="password" placeholder="Password" required="">
+                  </div>
+                  <button type="submit" class="btn">SIGN UP</button>
+                  <div class="account-exist">
+                      Already have an account? <a href="#" id="login">Login</a>
+                  </div>
+              </div>
+              <div class="signin"> 
+                  <div class="form-group">
+                      <i class="fa fa-envelope"></i>
+                      <input class="input-field" type="email" placeholder="Email" required="">
+                  </div>
+                  <div class="form-group">
+                      <i class="fa fa-key"></i>
+                      <input class="input-field" type="password" placeholder="Password" required="">
+                  </div>
+                  <div class="forget-password">
+                      <div class="check-box">
+                          <input type="checkbox" id="checkbox" style="position: relative; top: 1.5px;"> 
+                          <label for="checkbox">Remember me</label>
+                      </div>
+                      <a href="#">Forget password?</a>
+                  </div>
+                  <button type="submit" class="btn">LOGIN</button>
+                  <div class="account-exist">
+                      Create a new account? <a href="#" id="signup">Signup</a>
+                  </div>
+              </div>
+          </form>
+      </div>
+    </div>
+
+
+   
+
+    <script src="index.js"></script>
+    <script src="app.js"></script>
+
+    <script>
+      let btnLogin = document.getElementById("login");
+      let btnSignUp = document.getElementById("signup");
+
+      let signIn = document.querySelector(".signin");
+      let signUp = document.querySelector(".signup");
+
+      btnLogin.onclick = function(){
+          signIn.classList.add("active");
+          signUp.classList.add("inActive");
+      }
+
+      btnSignUp.onclick = function(){
+          signIn.classList.remove("active");
+          signUp.classList.remove("inActive");
+      }
+
+
+
+    </script>
+      
+</body>
+</html>
